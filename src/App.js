@@ -1,12 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './NavBar';
+import Home from './Home';
 
 export default function App() {
-  const title = 'First React Component :)';
-  return (
+   return (
     <div className="App">
+      <NavBar/>
       <div className="content">
-        <h1>{title}</h1>
+       <Home/>
      </div>
     </div>
   );
