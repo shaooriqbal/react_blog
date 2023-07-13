@@ -38,3 +38,20 @@
               padding: 20px;
             }
 
+.item-preview {
+  padding: 20px;
+  color: #ff7f7f;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.item-preview:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.item-preview p {
+  padding: 10px;
+}
+
+.title {
+  color: #f37c7c;
+}
