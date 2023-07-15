@@ -1,12 +1,12 @@
-import { useState } from "react";
-
+import { Component, useState ,useEffect} from "react";
+import BlogList from "./BlogList";
 const Home = () => {
  const [itemList,changeItemList] =  useState( [
     {
       id: 1,
       title: 'The Art of Storytelling',
       description: 'Unlock the power of storytelling and captivate your audience.',
-      author: 'John Doe'
+      author: 'John'
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Home = () => {
       id: 4,
       title: 'Mastering Productivity',
       description: 'Learn effective techniques to maximize your productivity and achieve success.',
-      author: 'Emily Brown'
+      author: 'John'
     },
     {
       id: 5,
@@ -32,17 +32,19 @@ const Home = () => {
       description: 'Find inner peace and cultivate mindfulness in your daily life.',
       author: 'Michael Wilson'
     },
-  ]);   
+ ]);   
+  const handelDel = (id) => {
+    const filtered = itemList.filter((item) => item.id !== id);  
+    changeItemList(filtered);
+  }
+  useEffect(() => { 
+    console.log('Effected');
+  },[itemList]);
     return (
         <div className="home">
-            {itemList.map((item) => (
-                <div className="item-preview" key={item.id}>
-                    <h1 className="title">{ item.title}</h1>
-                    <p>{item.description}</p>
-                    <p>Written By <b>{ item.author}</b></p>
-                </div>
-            ))}
-        </div>
+        <BlogList blogs={ itemList} title ='Blog Post' handleDel={handelDel}></BlogList>
+      <BlogList blogs={itemList.filter((item)=> item.author === 'John' )} title = 'Blogs by John' handleDel={handelDel}></BlogList>  
+      </div>
       );
 }
  

@@ -42,6 +42,7 @@
   padding: 20px;
   color: #ff7f7f;
   transition: box-shadow 0.2s ease-in-out;
+  font-size: 14px;
 }
 
 .item-preview:hover {
@@ -54,4 +55,24 @@
 
 .title {
   color: #f37c7c;
+  padding: 10px;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  
+  .blog-title {
+  
+    color: #1f1515;
+    padding: 10px;
+    font-size: 25px;
+  }
+  
+  .del-button {
+    color: #ebe3e6;
+    padding: 2px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    background-color: #db678a;
+    font-size: 15px;
 }
