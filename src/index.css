@@ -43,6 +43,7 @@
   color: #ff7f7f;
   transition: box-shadow 0.2s ease-in-out;
   font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .item-preview:hover {
@@ -75,4 +76,38 @@
     border: none;
     background-color: #db678a;
     font-size: 15px;
+}
+.blog-list a {
+  text-decoration: none;
+}
+
+.blog-details {
+  padding: 20px;
+  color: #ff7f7f;
+  transition: box-shadow 0.2s ease-in-out;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-heading {
+  padding: 5px;
+  color: #b42b2b;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.details-auth {
+  padding: 5px;
+  color: #080505;
+  font-size: 12px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.details-des {
+  padding: 5px;
+  color: #2b1919;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 1.5;
 }
