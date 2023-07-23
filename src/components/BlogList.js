@@ -9,7 +9,7 @@ const BlogList = ({ blogs , title}) => {
                     <h1 className="title">{ item.title}</h1>
                     <p>{item.description}</p>
                  <p>Written By <b>{item.author}</b></p>
-                 <button className="del-button" onClick={()=>console.log('Will del')}>Delete Blog</button>
+                 
                 </div>
                 </Link>
             ))}
